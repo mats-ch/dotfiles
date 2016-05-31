@@ -1,0 +1,4 @@
+/usr/bin/fbsetroot -solid black
+xset -b
+xmodmap "/home/mats/.Xmodmap"
+exec /usr/bin/fluxbox -log "/home/mats/.fluxbox/log"

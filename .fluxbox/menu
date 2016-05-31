@@ -1,0 +1,42 @@
+[begin] (Fluxbox)
+[encoding] {UTF-8}
+      [exec] (term) {urxvt}
+      [exec] (chrome) {google-chrome-stable} 
+[submenu] (X-utils)
+      [exec] (xfontsel) {xfontsel} 
+      [exec] (xman) {xman} 
+      [exec] (xload) {xload} 
+      [exec] (xbiff) {xbiff} 
+      [exec] (editres) {editres} 
+      [exec] (viewres) {viewres} 
+      [exec] (xclock) {xclock} 
+      [exec] (xmag) {xmag} 
+      [exec] (Reload .Xdefaults) {xrdb -load /home/mats/.Xdefaults} 
+[end]
+[submenu] (fluxbox menu)
+      [config] (Configure) 
+[submenu] (System Styles) {Choose a style...}
+      [stylesdir] (/usr/share/fluxbox/styles) 
+[end]
+[submenu] (User Styles) {Choose a style...}
+      [stylesdir] (~/.fluxbox/styles) 
+[end]
+      [workspaces] (Workspace List) 
+[submenu] (Tools)
+      [exec] (fluxconf) {fluxconf} 
+      [exec] (fluxkeys) {fluxkeys} 
+      [exec] (fluxmenu) {fluxmenu} 
+      [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center} 
+      [exec] (Run) {fbrun } 
+      [exec] (Regen Menu) {/usr/bin/fluxbox-generate_menu } 
+[end]
+      [commanddialog] (Fluxbox Command) 
+      [reconfig] (Reload config) 
+      [restart] (Restart) 
+      [exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) 2> /dev/null | xmessage -file - -center} 
+[end]
+      [separator]
+      [exit] (Exit)
+      [exec] (Shutdown) {halt}
+[endencoding]
+[end]
