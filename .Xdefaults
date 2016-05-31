@@ -1,0 +1,15 @@
+URxvt.metaSendsEscape: true
+URxvt.scrollBar: false
+URxvt.foreground: grey
+URxvt.background: black
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: google-chrome-stable
+URxvt.matcher.button: 1
+
+URxvt.intensityStyles: false
+
+URxvt.font:xft:terminus:style=regular:pixelsize=14
+URxvt.boldFont:xft:terminus:style=bold:pixelsize=14
+URxvt.italicFont:xft:terminus:style=oblique:pixelsize=14
+URxvt.boldItalicFont:xft:terminus:style=bold oblique:pixelsize=14
