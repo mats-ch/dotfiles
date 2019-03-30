@@ -1,6 +1,0 @@
-[app] (name=urxvt)
-  [Dimensions]	{50% 50%}
-[end]
-[app] (name=google-chrome) (class=google-chrome) (role=browser)
-  [Dimensions]	{100% 100%}
-[end]
